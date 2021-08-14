@@ -1,0 +1,28 @@
+extends ../main
+
+//- For hero-bg.pug
+block changeTextHero-bg
+  -smallText = 'About' // Default
+  -headText = 'About' // Default
+
+block content
+  // Start Navbar
+  include ../sections/navbar
+
+  // Start Hero-bg
+  include ../sections/hero-bg
+
+  // Start whatCrona
+  include ../sections/whatCrona
+  
+  // Start Team
+  include ../sections/team
+
+  // Start Statistics
+  include ../sections/Statistics
+
+  // Start Protect
+  include ../sections/protect
+
+  // Start Footer
+  include ../sections/footer

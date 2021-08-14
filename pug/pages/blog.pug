@@ -1,0 +1,24 @@
+extends ../main
+
+block changeTextHero-bg
+  -smallText = 'Update' // Default
+  -headText = 'Blog Posts' // Default
+
+block numberArticle
+  -artNum = 2 // Default
+
+block content
+  // Start Navbar
+  include ../sections/navbar
+
+  // Start Hero-bg
+  include ../sections/hero-bg
+
+  // Start newArticle
+  include ../sections/newArticle
+
+  // Start pagination
+  include ../sections/pagnation
+
+  // Start Footer
+  include ../sections/footer

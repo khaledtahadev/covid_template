@@ -1,0 +1,32 @@
+//- For hero-bg.pug
+block changeTextHero-bg
+  -smallText = 'Covid-19 Awareniess' // Defaulte
+  -headText = 'Stay Safe. Stay Home' //Defaulte
+
+//- For hero-bg.pug
+block changeImgHero-bg
+  -imgBg = 'images/illustration.png' //- Defaulte
+
+//- For newArticle
+block numberArticle
+  -artNum = 1 // Defaulte
+
+
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block titlePage
+      title Document
+    block cssFiles
+      link(href="css/all.min.css", rel="stylesheet")
+    //- Google Fonts
+    link( href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" , rel="stylesheet")
+  body
+    block content
+
+
+    block jsFiles
+      script(src="js/all.min.js")

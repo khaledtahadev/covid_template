@@ -1,0 +1,26 @@
+extends ../main
+
+//- For hero-bg.pug
+block changeTextHero-bg
+  -smallText = 'Covid Symptom' // default
+  -headText = 'Symptom' //default
+
+//- For hero-bg.pug
+block changeImgHero-bg
+  -imgBg = 'images/symptoms.png'
+
+block content
+  // Start Navbar
+  include ../sections/navbar
+
+  // Start hero-bg
+  include ../sections/hero-bg
+
+  // Start symptoms
+  include ../sections/symptoms
+
+  // Start protect
+  include ../sections/protect
+
+  // Start protect
+  include ../sections/footer

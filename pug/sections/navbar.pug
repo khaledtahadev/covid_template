@@ -1,0 +1,61 @@
+nav.navbar.navbar-light.bg-primary.navbar-expand-md
+  .container
+    a(href='#').navbar-brand.font-weight-bold
+      | Covid
+    button.navbar-toggler.border-0
+      i.icon-menu.h2
+    //- For Mobaile
+    .navMobile
+      span.icon-close2
+      ul.navbar-nav
+        li
+          a(href='index.html').nav-link Home
+        li
+          a(href='#', data-toggle='collapse', data-target='#dropMenu1').nav-link.dropdown-toggle.collapsed Prevention
+          ul#dropMenu1.collapse
+            li
+              a(href='#').nav-link Stay at home
+            li
+              a(href='#').nav-link Keep Social distancing
+            li
+              a(href='#').nav-link Wear Facemasl
+            li
+              a(href='#', data-toggle='collapse', data-target='#dropMenu2').dropdown-toggle.collapsed.nav-link More Link
+              ul#dropMenu2.collapse
+                li
+                  a(href='#').nav-link Menu One
+                li
+                  a(href="#").nav-link Menu Two
+                li
+                  a(href="#").nav-link Menu Three
+        li
+          a(href='symptom.html').nav-link Symptoms
+        li
+          a(href='about.html').nav-link About
+        li
+          a(href='blog.html').nav-link Blog
+        li
+          a(href='contact.html').nav-link Contact
+    //- For LargScreen
+    ul.navbar-nav.d-none.d-md-flex.ml-auto
+      li.nav-item.mr-3
+        a(href='index.html').nav-link Home
+      li.nav-item.dropdown
+        a(href='#', data-toggle='dropdown').nav-link.dropdown-toggle Prevention
+        .dropdown-menu
+          a(href='#').dropdown-item Link One
+          a(href='#').dropdown-item Link Two
+          a(href='#').dropdown-item Link Three
+          a(href='#').dropdown-item.dropdown-toggle Link Foure
+          .dropdown-menu
+            a(href="#").dropdown-item 1
+            a(href="#").dropdown-item 2
+            a(href="#").dropdown-item 3
+      li.nav-item.mr-3
+        a(href='symptom.html').nav-link Symptoms
+      li.nav-item.mr-3
+        a(href='about.html').nav-link About
+      li.nav-item.mr-3
+        a(href='blog.html').nav-link Blog
+      li.nav-item
+        a(href='contact.html').nav-link Contact

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- Start Navbar-->
+    <nav class="navbar navbar-light bg-primary navbar-expand-md">
+      <div class="container"><a class="navbar-brand font-weight-bold" href="#">Covid</a>
+        <button class="navbar-toggler border-0"><i class="icon-menu h2"></i></button>
+        <div class="navMobile"><span class="icon-close2"></span>
+          <ul class="navbar-nav">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link dropdown-toggle collapsed" href="#" data-toggle="collapse" data-target="#dropMenu1">Prevention</a>
+              <ul class="collapse" id="dropMenu1">
+                <li><a class="nav-link" href="#">Stay at home</a></li>
+                <li><a class="nav-link" href="#">Keep Social distancing</a></li>
+                <li><a class="nav-link" href="#">Wear Facemasl</a></li>
+                <li><a class="dropdown-toggle collapsed nav-link" href="#" data-toggle="collapse" data-target="#dropMenu2">More Link</a>
+                  <ul class="collapse" id="dropMenu2">
+                    <li><a class="nav-link" href="#">Menu One</a></li>
+                    <li><a class="nav-link" href="#">Menu Two</a></li>
+                    <li><a class="nav-link" href="#">Menu Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="symptom.html">Symptoms</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="blog.html">Blog</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <ul class="navbar-nav d-none d-md-flex ml-auto">
+          <li class="nav-item mr-3"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Prevention</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">Link One</a><a class="dropdown-item" href="#">Link Two</a><a class="dropdown-item" href="#">Link Three</a><a class="dropdown-item dropdown-toggle" href="#">Link Foure</a>
+              <div class="dropdown-menu"><a class="dropdown-item" href="#">1</a><a class="dropdown-item" href="#">2</a><a class="dropdown-item" href="#">3</a></div>
+            </div>
+          </li>
+          <li class="nav-item mr-3"><a class="nav-link" href="symptom.html">Symptoms</a></li>
+          <li class="nav-item mr-3"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item mr-3"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Start Hero-bg-->
+    <section class="hero-bg bg-primary">
+      <div class="container">
+        <div class="row justify-content-center text-center text-md-left">
+          <div class="col-md-6">
+            <div class="text-box mb-1 mb-md-0"><small class="text-primary">Covid-19 Awareniess</small>
+              <h2 class="text-primary font-weight-bold">Stay Safe. Stay Home</h2>
+              <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus doloribus quia, cumque optio</p>
+              <button class="btn bg-primary2 rounded-pill">How to Prevent</button>
+            </div>
+          </div>
+          <div class="col-md-6"><img class="img-fluid" src="images/illustration.png" alt="img"/></div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Form Contatc-->
+    <section class="contact mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>First Name</label>
+                  <input class="form-control" type="text"/>
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Last Name</label>
+                  <input class="form-control" type="text"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="email"/>
+              </div>
+              <div class="form-group">
+                <label>Subject</label>
+                <input class="form-control" type="text"/>
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="qick-info">
+              <h4 class="font-weight-bold pl-4 mb-4">Quick info</h4>
+              <ul class="d-flex flex-column pl-4">
+                <li class="fa fa-map-marker mb-3"><a href="#">Fake street, 3929, London</a></li>
+                <li class="fa fa-phone mb-3"><a href="#">+1 291 2902 392</a></li>
+                <li class="fa fa-envelope mb-3"><a href="#">info@mydomain.com</a></li>
+                <li class="fa fa-globe"><a href="#">https://mywebsite.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

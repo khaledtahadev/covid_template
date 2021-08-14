@@ -1,0 +1,329 @@
+body{
+  overflow-x: hidden;
+  font-family: 'Mulish', sans-serif;
+  /* height: 3000px; */
+}
+
+/* Start Navbar */
+nav.navbar{
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+}
+nav.navbar.fixed{
+  background-color: #FFF !important;
+  border-bottom: #EEE;
+  box-shadow: 0 1px 0px 0px #99999917;
+}
+nav.navbar .navbar-toggler{
+  color: #212529;
+}
+nav.navbar .navbar-toggler:focus{
+  outline: none;
+}
+/* Start Navbar Mobaile */
+nav.navbar .navMobile{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+  padding: 50px 30px 20px;
+  height: 100vh;
+  width: 60%;
+  transform: translateX(110%);
+  transition: all.3s ease-in-out;
+  z-index: 1;
+}
+@media(max-width: 768px){
+  .show-nav .navMobile{
+    transform: translateX(0%) !important;
+  }
+  .show-nav nav.navbar:after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+nav.navbar .navMobile .icon-close2{
+  color: #9E9E9E;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+  font-size: 25px;
+}
+nav.navbar .navMobile a{
+  color: #212529 !important;
+  font-size: 20px;
+  transition: color .3s ease-in-out;
+}
+nav.navbar .navMobile a:hover{
+  color: #6F42C1 !important;
+}
+nav.navbar .navMobile .navbar-nav ul {
+  list-style: none;
+}
+nav.navbar .navMobile .navbar-nav ul a{
+  text-decoration: none;
+  font-size: 16px;
+}
+nav.navbar .navMobile .navbar-nav .dropdown-toggle{
+  position: relative;
+}
+nav.navbar .navMobile .navbar-nav .dropdown-toggle:after{
+  content: "\f078";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  border: 1px solid transparent;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  color: #999;
+  font-size: 16px;
+  transform: rotate(-180deg);
+  transition: 0.3s ease-in-out;
+}
+nav.navbar .navMobile .navbar-nav .dropdown-toggle.collapsed:after{
+  transform: rotate(360deg);
+}
+nav.navbar .navMobile .navbar-nav .dropdown-toggle:hover:after{
+  background-color: #9e9e9e3b;
+}
+
+/* For Larg Screen */
+nav.navbar .dropdown .dropdown-menu{
+  left: 100px;
+  width: 200px;
+  border-top: 3px solid #6F42C1;
+}
+nav.navbar .dropdown > .dropdown-menu {
+  left: 10px;
+}
+/* Start Hero-bg */
+section.hero-bg{
+  padding: 8rem 0 0;
+  border-bottom-right-radius: 50%;
+  overflow: hidden;
+}
+section.hero-bg small{
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Start statis */
+section.statis{
+  padding: 80px 0;
+}
+section.statis h2{
+  font-weight: 900;
+}
+section.statis .box i{
+  font-size: 2rem;
+}
+section.statis h3{
+  font-weight: 900;
+}
+section.statis small{
+  font-size: 16px
+}
+
+/* Start WhatCrona */
+section.whatCrona{
+  margin-top: 50px;
+}
+section.whatCrona .play-video{
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  color: #FFF;
+} 
+section.whatCrona .fa-play{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #6F42C1;
+  color: #FFF;
+  text-decoration: none;
+  margin-left: 5px;
+}
+section.whatCrona li::before,
+section.whatPrevent li::before,
+section.protect li::before{
+  content: "\f00c";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+  color: #FFF;
+  background-color: #6F42C1;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 12px;
+}
+section.whatCrona i{
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+/* What Prevent */
+section.whatPrevent{
+  padding: 40px 0 80px;
+}
+section.whatPrevent .card{
+  margin-bottom: 30px;
+}
+section.whatPrevent .card i{
+  height: 150px;
+  background-color: #F0ECF9;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 40px;
+  color: #6F42C1;
+}
+section.whatPrevent .box a{
+  font-size: 12px;
+}
+
+/* Start Protect */
+section.protect{
+  padding: 80px 0;
+}
+section.protect h2{
+  font-weight: 900;
+}
+section.protect .box h5{
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+section.protect li::before{
+  background-color: #A8DF65;
+}
+section.protect .box.avoid li::before{
+  content: "\f00d";
+  background-color: transparent;
+  color: red;
+}
+/* Start Symptoms */
+section.symptoms .box-call a{
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+}
+section.symptoms .box-call a:before{
+  margin-right: 10px;
+  font-size: 14px;
+}
+/* Start New Article */
+section.newArticle{
+  padding: 70px 0;
+}
+section.newArticle .boxtext h2{
+  font-weight: 900;
+}
+section.newArticle .card .date{
+  background-color: #6f42c1;
+  color: #fff;
+  padding: 5px 0;
+  width: 24%;
+  margin: -18px auto 0;
+  font-size: 14px;
+}
+section.newArticle .card-body span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+section.newArticle .card-body span:before{
+  margin-right: 5px;
+}
+/* Footer */
+footer.footer{
+  padding: 90px 0;
+}
+footer.footer h3{
+  margin: 20px 0;
+  font-size: 18px;
+}
+footer.footer a{
+  display: block;
+  color: #6F42C1;
+  font-size: 16px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+/* Start Team */
+section.team h2{
+  font-weight: 900;
+}
+section.team img{
+  width: 140px;
+  border-radius: 40%;
+}
+
+/* Start Pagnation */
+section.pagnation a{
+  width: 40px;
+  height: 40px;
+  background-color: #6F42C1;
+  display: inline-block;
+  color: #FFF;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+section.pagnation a.active{
+  background-color: #F0ECF9;
+  color: #6F42C1;
+  font-weight: bold;
+}
+
+/* Start Contact */
+section.contact .form-control:focus{
+  border-color: #6F42C1;
+  box-shadow: none;
+}
+section.contact textarea{
+  height: 200px;
+}
+section.contact .qick-info li:before{
+  margin-right: 10px;
+  color: #6F42C1;
+}
+section.contact .qick-info li a{
+  color: #6F42C1;
+  text-decoration: none;
+}
+
+
+/* Start Customize Bootstrap Constant Values */
+.text-primary{
+  color: #6F42C1 !important;
+}
+.bg-primary{
+  background-color: #F0ECF9 !important;
+}
+.bg-primary2{
+  background-color: #6F42C1 !important;
+  color: #FFF;
+}
+.btn:focus{
+  box-shadow: none;
+}
+.btn:hover{
+  color: #FFF;
+}
